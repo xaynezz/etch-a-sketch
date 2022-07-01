@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" draggable="false">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,19 @@
         <h1>Etch-A-Sketch</h1>
         <button class="mode">Dark</button>
     </div>
-
+    <div class="main">
+        <div class="control">
+            <div class="color">
+                <h3>Color:</h3>
+                <input type="color" id="color-picker">
+            </div>
+            <button class="size-selector">Size</button>
+            <button class="eraser">Eraser</button>
+            <button class="clear">Clear</button>
+            
+        </div>
+        <div class="board" draggable="false"></div>
+    </div>
     <div class="footer">
         <p>The Odin Project @ 2022</p>
         |
