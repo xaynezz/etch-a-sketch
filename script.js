@@ -65,6 +65,7 @@ function boardSet(size) {
             let column = document.createElement("div");
             column.classList.add('column');
             column.draggable = false;
+            column.style.setProperty('user-select', 'none');
             row.append(column);
         }
         board.append(row);
